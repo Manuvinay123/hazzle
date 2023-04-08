@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			background-image: url('https://edge.mwallpapers.com/photos/celebrities/aesthetic/simple-wallpaper-background-picture-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-vj23n.jpg');
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.login-box {
+			background-image:url('');
+			padding: 40px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			text-align: center;
+			font-size: 1.2rem;
+			color:white;
+			max-width: 400px;
+			width: 90%;
+		}
+
+		.user-box {
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+		.user-box label {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 10px 0;
+			font-size: 1rem;
+			color: #fff;
+			pointer-events: none;
+			transition: 0.5s;
+		}
+
+		.user-box input {
+			width: 100%;
+			padding: 10px 0;
+			font-size: 1rem;
+			border: none;
+			border-bottom: 1px solid #fff;
+			background: transparent;
+			outline: none;
+			color: #fff;
+		}
+
+		.user-box input:focus ~ label,
+		.user-box input:valid ~ label {
+			top: -20px;
+			left: 0;
+			color: #a0a0a0;
+			font-size: 0.8rem;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			margin-top: 20px;
+			border-radius: 25px;
+			text-decoration: none;
+			font-size: 1.2rem;
+			transition: background-color 0.3s ease-out;
+			cursor: pointer;
+			border: none;
+		}
+
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="login-box">
+		<h1>Login</h1>
+		<form>
+			<div class="user-box">
+				<input type="text" name="username" required="">
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="password" required="">
+				<label>Password</label>
+			</div>
+			<button class="button" type="submit"><a href="after login.html">Login</a></button>
+		</form>
+	</div>
+</body>
+</html>
